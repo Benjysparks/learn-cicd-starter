@@ -8,7 +8,7 @@ import (
 
 func TestAPI (t *testing.T) {
 
-	testKey := "ThisAIsKey"
+	testKey := "ThisIsAKey"
 
 	header := http.Header{}
 	header.Add("Content-Type", "application/json")
