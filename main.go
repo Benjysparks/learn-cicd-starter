@@ -76,7 +76,6 @@ func main() {
 		}
 	})
 
-
 	v1Router := chi.NewRouter()
 
 	if apiCfg.DB != nil {
