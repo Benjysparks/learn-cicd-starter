@@ -1,19 +1,17 @@
 package auth
 
 import (
-	"testing"
 	"net/http"
-
+	"testing"
 )
 
-func TestAPI (t *testing.T) {
+func TestAPI(t *testing.T) {
 
 	testKey := "ThisIsAKey"
 
 	header := http.Header{}
 	header.Add("Content-Type", "application/json")
-	header.Set("Authorization", "ApiKey " +testKey)
-	
+	header.Set("Authorization", "ApiKey "+testKey)
 
 	key, err := GetAPIKey(header)
 	if err != nil {
